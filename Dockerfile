@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/java/jdk:8-zulu-ubuntu-18.04	
+FROM ubuntu:latest
 
 LABEL version="1.2"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
@@ -13,8 +13,6 @@ LABEL com.github.actions.color="gray-dark"
 VOLUME /usr/bin
 VOLUME /usr/lib
 
-RUN apk add --no-cache curl ca-certificates
-ADD *.sh /
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
