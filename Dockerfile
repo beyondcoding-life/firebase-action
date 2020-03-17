@@ -20,7 +20,7 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
     yarn \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install openjdk-7-jre
+RUN tar xvf openjdk-13*_bin.tar.gz
 
 RUN yarn global add firebase-tools
 RUN yarn global add jest
