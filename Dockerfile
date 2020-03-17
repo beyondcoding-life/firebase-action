@@ -1,4 +1,4 @@
-FROM timbru31/java-node
+FROM timbru31/java-node:latest
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
