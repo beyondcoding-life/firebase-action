@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/java/jdk:13-zulu-ubuntu
 
-LABEL version="1.1.3"
+LABEL version="1.2"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
 LABEL homepage="https://github.com/beyondcoding-life/firebase-action"
 LABEL maintainer="Xi Ming <v8main@github.com>"
