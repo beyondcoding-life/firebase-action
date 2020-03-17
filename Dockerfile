@@ -10,6 +10,9 @@ LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable fir
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
+COPY . /usr/src/java
+WORKDIR /usr/src/java
+
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
