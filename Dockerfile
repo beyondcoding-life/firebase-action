@@ -1,4 +1,4 @@
-FROM openjdk:7
+FROM mcr.microsoft.com/java/jdk:13-zulu-windowsservercore	
 
 LABEL version="1.1.3"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
