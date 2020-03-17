@@ -13,7 +13,7 @@ LABEL com.github.actions.color="gray-dark"
 VOLUME /usr/bin
 VOLUME /usr/lib
 
-RUN apt-get update; apt-get install curl
+RUN apt-get update -qq; apt-get install -qq curl
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
