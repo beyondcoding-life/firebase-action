@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-LABEL version="1.1"
+LABEL version="1.1.1"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
 LABEL homepage="https://github.com/beyondcoding-life/firebase-action"
 LABEL maintainer="Xi Ming <v8main@github.com>"
