@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM openjdk:7
 
 LABEL version="1.1.1"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
