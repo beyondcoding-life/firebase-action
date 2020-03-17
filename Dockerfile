@@ -1,4 +1,4 @@
-FROM openjdk:8-jre
+FROM alpine:3.10
 
 LABEL version="1.1.1"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
@@ -10,8 +10,7 @@ LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable fir
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
-COPY . /usr/src/java
-WORKDIR /usr/src/java
+RUN apt-get install openjdk-7-jre
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
