@@ -10,6 +10,7 @@ LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable fir
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN npm install -g firebase-tools
 RUN npm install -g jest
 
