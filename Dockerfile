@@ -1,16 +1,17 @@
-FROM node:10-slim
+FROM timbru31/java-node
 
-LABEL version="1.1.0"
-LABEL repository="https://github.com/w9jds/firebase-action"
-LABEL homepage="https://github.com/w9jds/firebase-action"
-LABEL maintainer="Jeremy Shore <w9jds@github.com>"
+LABEL version="1.0.0"
+LABEL repository="https://github.com/beyondcoding-life/firebase-action"
+LABEL homepage="https://github.com/beyondcoding-life/firebase-action"
+LABEL maintainer="Xi Ming <v8main@github.com>"
 
-LABEL com.github.actions.name="GitHub Action for Firebase"
-LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable common commands."
+LABEL com.github.actions.name="GitHub Action for Firebase testing"
+LABEL com.github.actions.description="Wraps the firebase-tools CLI to enable firebase testing."
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
 RUN npm install -g firebase-tools
+RUN npm install -g jest
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"

@@ -1,9 +1,9 @@
-name: 'GitHub Action for Firebase'
-author: 'Jeremy Shore'
-description: 'Wraps the firebase-tools CLI to enable common commands.'
+name: "Firebase Emulators with Jest"
+author: "Xi Ming"
+description: "Wraps the firebase-tools CLI and Jest to enable common commands."
 branding:
-  icon: 'package'
-  color: 'gray-dark'
+  icon: "package"
+  color: "gray-dark"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
