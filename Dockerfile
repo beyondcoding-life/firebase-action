@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/java/jdk:13-zulu-alpine
+FROM mcr.microsoft.com/java/jdk:13-zulu-ubuntu
 
 LABEL version="1.1.3"
 LABEL repository="https://github.com/beyondcoding-life/firebase-action"
