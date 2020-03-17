@@ -11,8 +11,15 @@ LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN npm install -g firebase-tools
-RUN npm install -g jest
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
+    nodejs \
+    yarn \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN yarn global add firebase-tools
+RUN yarn global add jest
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
